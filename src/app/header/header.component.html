@@ -1,0 +1,39 @@
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <button class="logo" (click)="onHome()">
+        <img src="assets/images/logoMaru25-2.png" width="151" height="28" alt="Maru home">
+      </button>
+    <!--   <a routerLink="/" class="logo">
+        <img src="assets/images/logoMaru25" width="151" height="28" alt="Maru home">
+      </a> -->
+
+      <nav class="navbar" data-navbar ngClass="status ? 'active' : ''">
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a routerLink="/" class="label-lg navbar-link has-after" routerLinkActive="active" (click)="onHome()">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a routerLink="/portfolio"  class="label-lg navbar-link has-after" routerLinkActive="active" (click)="onPortfolio()">Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active" (click)="onContact()">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a routerLink="/contact" class="btn btn-primary" (click)="onContact()">Contáctame</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+        <!-- <ion-icon name="menu-outline" aria-hidden="true"></ion-icon> -->
+      </button>
+
+    </div>
+  </header>
