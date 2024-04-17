@@ -8,38 +8,33 @@
       <section class="section contact has-bg-image" aria-labelledby="contact-label"
         style="background-image: url('./assets/images/service-bg.png')">
         <div class="container">
+          <form  class="contact-form" (submit)="sendEmail($event)">
 
-          <form action="" class="contact-form">
-
-            <h2 class="headline-sm" id="contact-label">Get in touch</h2>
-
-            <p class="contact-text body-md">
-              Our friendly team would love to hear from you.
-            </p>
+            <h2 class="headline-sm" id="contact-label">CONTACTAME</h2>
 
             <div class="wrapper">
 
               <div>
-                <label for="name" class="label">First name</label>
+                <label for="name" class="label">Nombre</label>
 
-                <input type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+                <input type="text" name='name' id="name" placeholder="Name *" required class="input-field">
               </div>
 
               <div>
-                <label for="email" class="label">Your Email </label>
+                <label for="email" class="label">Tu Email </label>
 
-                <input type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+                <input type="email" name='email' id="email" placeholder="Email *" required class="input-field">
               </div>
 
             </div>
 
-            <label for="subject" class="label">Subject</label>
-            <input type="text" name="subject" id="subject" placeholder="Subject *" class="input-field">
+            <label for="subject" class="label">Asunto</label>
+            <input type="text" name='subject' id="subject" placeholder="Subject *" class="input-field">
 
-            <label for="message" class="label">Your message </label>
-            <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
+            <label for="message" class="label">Tu mensaje </label>
+            <textarea name='message' id="message" placeholder="Your message *" required class="input-field"></textarea>
 
-            <a href="#" class="btn btn-tertiary">Send Message</a>
+            <input type="submit" class="btn btn-tertiary" id="button" value="Enviar mensaje">
 
           </form>
 
@@ -48,48 +43,19 @@
             <ul class="contact-list">
 
               <li class="contact-item">
-
-                <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
-               <!--    <ion-icon name="call" aria-hidden="true"></ion-icon> -->
+                <div class="item-icon" >
+                  <a href="https://www.linkedin.com/in/marianelaCortina">
+                    <img src="../../assets/images/linkedin_372399.png" alt="https://www.freepik.es/icono/linkedin_372399#fromView=search&page=4&position=57&uuid=ee8d1393-7ea1-4dcd-8e59-c741f675f64e">
+                  </a>
                 </div>
-
-                <div>
-                  <p class="label-lg">Phone</p>
-
-                  <a href="tel:+011236548096" class="body-lg">+0 123 456 789</a>
-                </div>
-
               </li>
 
               <li class="contact-item">
-
-                <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
-               <!--    <ion-icon name="mail" aria-hidden="true"></ion-icon> -->
+                <div class="item-icon" >
+                  <a href="https://github.com/MarianelaCortina">
+                    <img src="../../assets/images/sharethis_372405.png" alt="https://www.freepik.es/icono/solicitud_14078509#fromView=resource_detail&position=16">
+                  </a>
                 </div>
-
-                <div>
-                  <p class="label-lg">Mail</p>
-
-                  <!-- <a href="tel:info@domainname.com" class="body-lg">info@jassa.com</a> -->
-                </div>
-
-              </li>
-
-              <li class="contact-item">
-
-                <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
-             <!--      <ion-icon name="location" aria-hidden="true"></ion-icon> -->
-                </div>
-
-                <div>
-                  <p class="label-lg">Visit My Studio</p>
-
-                  <address class="body-lg">
-                    Ludhiana Punjab,
-                    India
-                  </address>
-                </div>
-
               </li>
 
             </ul>
@@ -99,5 +65,16 @@
         </div>
       </section>
 
+      <script type="text/javascript" 
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        emailjs.init('fc_xViW_Ezu-0ot6m')
+      </script>
+
     </article>
+   
   </main>
+ 
+ 
+    
