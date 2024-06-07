@@ -21,29 +21,10 @@ export class HeaderComponent {
    
   ) {}
 
-  //Sidebar toggle show hide function
   status = false;
   addToggle(){
     this.status = !this.status;       
   }
-/* 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
- */
-/* 
-  onHome(){
-    this.router.navigate(['/']);
-  }
-
-  onContact(){
-    this.router.navigate(['/contact']);
-  }
-
-  onPortfolio(){
-    this.router.navigate(['/portfolio']);
-  }
- */
 
 
 

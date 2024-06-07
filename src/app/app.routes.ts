@@ -10,9 +10,5 @@ export const routes: Routes = [
     { path: 'portfolio', component: PortfolioComponent },
     { path: '**', redirectTo: '' },
 
-   /*  { path: 'header', 
-        loadChildren: () => import('./header/routes')
-    
-    } */
 
 ];
