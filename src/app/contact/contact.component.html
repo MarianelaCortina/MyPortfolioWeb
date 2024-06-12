@@ -1,0 +1,80 @@
+<main id="contact">
+    <article>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact has-bg-image" aria-labelledby="contact-label"
+        style="background-image: url('./assets/images/service-bg.png')">
+        <div class="container">
+          <form  class="contact-form" (submit)="sendEmail($event)">
+
+            <h2 class="headline-sm" id="contact-label">CONTACTAME</h2>
+
+            <div class="wrapper">
+
+              <div>
+                <label for="name" class="label">Nombre</label>
+
+                <input type="text" name='name' id="name" placeholder="Name *" required class="input-field">
+              </div>
+
+              <div>
+                <label for="email" class="label">Tu Email </label>
+
+                <input type="email" name='email' id="email" placeholder="Email *" required class="input-field">
+              </div>
+
+            </div>
+
+            <label for="subject" class="label">Asunto</label>
+            <input type="text" name='subject' id="subject" placeholder="Subject *" class="input-field">
+
+            <label for="message" class="label">Tu mensaje </label>
+            <textarea name='message' id="message" placeholder="Your message *" required class="input-field"></textarea>
+
+            <input type="submit" class="btn btn-tertiary" id="button" value="Enviar mensaje">
+
+          </form>
+
+          <div class="contact-content">
+
+            <ul class="contact-list">
+
+              <li class="contact-item">
+                <div class="item-icon" >
+                  <a href="https://www.linkedin.com/in/marianelaCortina">
+                    <img src="../../assets/images/linkedin_372399.png" alt="https://www.freepik.es/icono/linkedin_372399#fromView=search&page=4&position=57&uuid=ee8d1393-7ea1-4dcd-8e59-c741f675f64e">
+                  </a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="item-icon" >
+                  <a href="https://github.com/MarianelaCortina">
+                    <img src="../../assets/images/sharethis_372405.png" alt="https://www.freepik.es/icono/solicitud_14078509#fromView=resource_detail&position=16">
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <script type="text/javascript" 
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        emailjs.init('fc_xViW_Ezu-0ot6m')
+      </script>
+
+    </article>
+   
+  </main>
+ 
+ 
+    
