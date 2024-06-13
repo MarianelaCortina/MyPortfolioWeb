@@ -164,7 +164,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   overflow: auto;
-  /* overflow: hidden; */
+ 
 }
 
 body.loaded { overflow: visible; }
@@ -185,7 +185,7 @@ body.loaded { overflow: visible; }
 \*-----------------------------------*/
 
 .headline-lg { 
-  font-size: 3rem; 
+  font-size: 2rem; 
   white-space: nowrap;
   overflow: hidden;
 }
@@ -530,11 +530,7 @@ justify-content: center;
     transition: transform var(--transition-1);
   }
 
-/*   .navbar-link:is(:hover, :focus-visible, .active)::after { */
-  /* .navbar-link:is(:hover, :focus-visible)::after {
-    transform: translateX(-50%) scaleX(1);
-    transform-origin: left;
-  } */
+
 
   .header .btn { display: block; }
 
@@ -579,14 +575,14 @@ justify-content: center;
     gap: 10px;
   }
  
-  /* Ajusta el espacio entre el botón y los elementos del menú */
-   .navbar-toggler {
+  
+  .navbar-toggler {
     margin-bottom: -15px; 
-    /* margin-bottom: -30px;  */
+    
   } 
 
   .navbar-toggler.open {
-    margin-bottom: 0; /* Elimina el espacio adicional cuando el menú está abierto */
+    margin-bottom: 0; 
   }
 
   .navbar-link {
