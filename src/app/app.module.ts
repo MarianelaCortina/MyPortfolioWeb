@@ -21,9 +21,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    PortfolioComponent,
-    
-
+    PortfolioComponent
   ],
   providers: [],
   bootstrap: []

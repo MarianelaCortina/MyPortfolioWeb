@@ -8,7 +8,7 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'portfolio', component: PortfolioComponent },
-    { path: '**', redirectTo: '' },
+    { path: '**', redirectTo: '', pathMatch: 'full'},
 
 
 ];
