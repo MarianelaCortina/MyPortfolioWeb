@@ -33,3 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     type();
 });
 
+
+
+  
