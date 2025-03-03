@@ -188,6 +188,7 @@ body.loaded { overflow: visible; }
   font-size: 2rem; 
   white-space: nowrap;
   overflow: hidden;
+  min-height: 3rem;
 }
 
 .cursor {
