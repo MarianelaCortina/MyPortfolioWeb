@@ -129,6 +129,12 @@ img { height: auto; }
   height: 50px;
 } 
 
+.logo{
+  height: 50px;
+  width: 180px;
+  margin-left: 5px;
+}
+
 .img-git {
   margin-left: 50px;
   height: 60px;
@@ -381,7 +387,7 @@ justify-content: center;
 
 
 /*-----------------------------------*\
-  #MEDIA QUEREIS
+  #MEDIA QUERIES
 \*-----------------------------------*/
 
 /**
@@ -535,6 +541,8 @@ justify-content: center;
 
   .header .btn { display: block; }
 
+
+
 }
 
 /* TABLET/MOBILE */
@@ -592,6 +600,11 @@ justify-content: center;
   
   .navbar-brand{
     visibility: hidden;
+  }
+  .logo{
+    height: 30px;
+    width:50px;
+    margin-left: 5px;
   }
 }
 
