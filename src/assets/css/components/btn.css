@@ -6,10 +6,6 @@
  * 
  */
 
-
-
-
-
 .btn {
   background-color: var(--orange-red);
   font-size: var(--fs-14);
@@ -46,3 +42,40 @@
 }
 
 .btn-tertiary:is(:hover, :focus-visible) { color: var(--white); }
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+@media (max-width: 992px) {
+  .btn {
+    background-color: var(--orange-red);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    max-width: max-content;
+    letter-spacing: 2px;
+    padding: 5px 22px;
+    box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+    transition: var(--transition-1);
+  }
+
+  @media (min-width: 352px) and (max-width: 767px) {
+    /* Estilos para pantallas entre 352px y 767px */
+    .btn {
+      background-color: var(--orange-red);
+      font-size: var(--fs-14);
+      font-weight: var(--fw-500);
+      text-transform: uppercase;
+      max-width: max-content;
+      letter-spacing: 2px;
+      padding: 15px 22px;
+      box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+      transition: var(--transition-1);
+    }
+  }
+  
+
+}
