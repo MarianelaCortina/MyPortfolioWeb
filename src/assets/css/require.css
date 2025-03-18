@@ -518,6 +518,17 @@ justify-content: center;
     justify-content: center;
   }
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  .hidden {
+    transform: translateY(-100%);
+  }
   .navbar-nav { display: flex; }
 
   .nav-item:not(:last-child) { border-block-end: none; }
