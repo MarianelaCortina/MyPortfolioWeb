@@ -1,14 +1,11 @@
 import { Component, HostListener } from '@angular/core';
-import { HomeComponent } from '../home/home.component';
-import { ContactComponent } from '../contact/contact.component';
-import { PortfolioComponent } from '../portfolio/portfolio.component';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ HomeComponent, ContactComponent, PortfolioComponent, CommonModule, RouterOutlet, RouterLink],
+  imports: [ CommonModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
