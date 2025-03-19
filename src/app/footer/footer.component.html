@@ -4,33 +4,20 @@
       <ul class="social-list">
 
         <li>
-          <a href="#" class="social-link">
-          </a>
+          <a  class="social-link" routerLink="" [ngClass]="{active: menuOption == 'home'}" (click)="onOption('home')">Home</a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
-          </a>
+          <a  class="social-link" routerLink="portfolio" [ngClass]="{active: menuOption == 'portfolio'}" (click)="onOption('portfolio')">Portfolio</a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-          </a>
+          <a class="social-link" routerLink="contact" [ngClass]="{active: menuOption == 'contact'}" (click)="onOption('contact')">Contacto</a>
         </li>
 
       </ul>
 
-      <p class="text-center">&copy; 2024 copyright Marianela Cortina</p>
+      <p class="text-center">&copy; 2025 copyright Marianela Cortina</p>
 
     </div>
 </footer>
