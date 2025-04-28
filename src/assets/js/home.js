@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const phrases = ["Soy desarrolladora web", "Soy desarrolladora frontend"];
+    const phrases = [
+        "Desarrolladora web fullstack", 
+        "Especializada en Angular y .Net"
+    ];
     const typingAnimationElement = document.getElementById('typing-animation');
     let phraseIndex = 0;
     let charIndex = 0;
