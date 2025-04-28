@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const phrases = [
         "Desarrolladora web fullstack", 
-        "Especializada en Angular y .Net"
+        "Especializada en Angular y .NET"
     ];
     const typingAnimationElement = document.getElementById('typing-animation');
     let phraseIndex = 0;
